@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Venda</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <script type="module" src="src/index.js"></script>
+
+    <h1>Venda</h1>
+    <div id="comercializavel">
+        <label for="">Quantidade: </label>
+        <input type="text" id="quantidade" name="quantidade" value="1">
+        <label for="">Código:</label>
+        <input type="text" id="codigo" name="codigo">
+        <button id="adicionar">Adicionar</button><br><br>
+        <input type="text" id="descricao" name="descricao" size="77" disabled><br><br>
+        <label for="">Duração: </label>
+        <span id="duracao"></span>
+        <div id="imagem"></div>
+    </div>
+    <div id="item-venda">
+        <span id='linha'></span>
+        <table id="item">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>Preço(R$)</th>
+                    <th>Qtde.</th>
+                    <th>Subtotal(R$)</th>
+                    <th></th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <span id='linha'></span>
+    </div>
+    <div id="venda">
+        <label for="">Subtotal(R$): </label>
+        <span id="subtotal-venda"> 0</span>
+        <label for="">Desconto:</label>
+        <input type="text" id="percentual" name="percentual" value="0"> %= R$
+        <span id="desconto">0</span>
+        <label for="">Total(R$)</label>
+        <span id="total-venda">0</span>
+    </div>
+
+    <button id="concluir">Concluir</button>
+</body>
+
+</html>
